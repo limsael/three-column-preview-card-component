@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100svh;
+  padding: 3rem 1rem;
+}
+
+.card {
+  display: grid;
+}
+.card__sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 1rem 2rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+.card__sedans a {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  display: inline-block;
+  margin-block: 0.6rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.5s ease-in-out;
+  text-align: center;
+}
+.card__sedans a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.card__icon {
+  margin-block-end: 0.75rem;
+}
+.card__title {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-block-end: 0.5rem;
+}
+.card__text {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-block-end: 0.95rem;
+}
+.card__suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 1rem 2rem;
+}
+.card__suvs a {
+  color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  display: inline-block;
+  margin-block: 0.6rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.5s ease-in-out;
+  text-align: center;
+}
+.card__suvs a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+.card__luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+.card__luxury a {
+  color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 0.5rem 0.9rem;
+  display: inline-block;
+  margin-block: 0.6rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.5s ease-in-out;
+  text-align: center;
+}
+.card__luxury a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card__sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.625rem;
+    padding: 0.5rem 1rem;
+    display: grid;
+    gap: 1rem;
+  }
+  .card__suvs {
+    display: grid;
+    gap: 1rem;
+  }
+  .card__luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.625rem;
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

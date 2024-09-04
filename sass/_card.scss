@@ -1,0 +1,124 @@
+.card {
+  display: grid;
+
+  &__sedans {
+    background-color: $bright-orange;
+    padding: 1rem 2rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+
+    a {
+      color: $bright-orange;
+      background-color: $very-light-gray;
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      display: inline-block;
+      margin-block: 0.6rem 1rem;
+      border-radius: 2rem;
+      transition: background-color 0.5s ease-in-out;
+      text-align: center;
+
+      &:hover {
+        background-color: transparent;
+        color: $very-light-gray;
+        border: 1px solid $very-light-gray;
+      }
+    }
+  }
+
+  &__icon {
+    margin-block-end: 0.75rem;
+  }
+
+  &__title {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: $transparent-white;
+    margin-block-end: 0.5rem;
+  }
+
+  &__text {
+    color: $transparent-white;
+    margin-block-end: 0.95rem;
+  }
+
+  &__suvs {
+    background-color: $dark-cyan;
+    padding: 1rem 2rem;
+
+    a {
+      color: $dark-cyan;
+      background-color: $very-light-gray;
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      display: inline-block;
+      margin-block: 0.6rem 1rem;
+      border-radius: 2rem;
+      transition: background-color 0.5s ease-in-out;
+      text-align: center;
+
+      &:hover {
+        background-color: transparent;
+        color: $very-light-gray;
+        border: 1px solid $very-light-gray;
+      }
+    }
+  }
+
+  &__luxury {
+    background-color: $very-dark-cyan;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+
+    a {
+      color: $very-dark-cyan;
+      background-color: $very-light-gray;
+      text-decoration: none;
+      padding: 0.5rem 0.9rem;
+      display: inline-block;
+      margin-block: 0.6rem 1rem;
+      border-radius: 2rem;
+      transition: background-color 0.5s ease-in-out;
+      text-align: center;
+
+      &:hover {
+        background-color: transparent;
+        color: $very-light-gray;
+        border: 2px solid $very-light-gray;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+  }
+  .card {
+    grid-template-columns: repeat(3, 1fr);
+
+    &__sedans {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.625rem;
+      padding: 0.5rem 1rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    &__suvs {
+      display: grid;
+      gap: 1rem;
+    }
+
+    &__luxury {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.625rem;
+
+      display: grid;
+      gap: 1rem;
+    }
+  }
+}
